@@ -1,0 +1,110 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "calculator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-calculator-Debug-0a16b52427cf84950fc5.json",
+					"name" : "calculator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "prime_close::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-prime_close-Debug-814aa67626dad353ebc6.json",
+					"name" : "prime_close",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "prime_number1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-prime_number1-Debug-259a7c2b95a9c134c10b.json",
+					"name" : "prime_number1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "prime_number2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-prime_number2-Debug-ee48fe9235bc8759a622.json",
+					"name" : "prime_number2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ruishilun::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ruishilun-Debug-f9643ef618003ae06c45.json",
+					"name" : "ruishilun",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sqrt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sqrt-Debug-dad29ea6ed8174729b4c.json",
+					"name" : "sqrt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "try::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-try-Debug-80355cecb44c20e9f2d4.json",
+					"name" : "try",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/codes/clion/prctice/cmake-build-debug",
+		"source" : "D:/codes/clion/prctice"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

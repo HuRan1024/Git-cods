@@ -1,0 +1,9 @@
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/calculator.dir
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/prime_number1.dir
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/prime_number2.dir
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/sqrt.dir
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/try.dir
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/prime_close.dir
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/ruishilun.dir
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/codes/clion/prctice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
