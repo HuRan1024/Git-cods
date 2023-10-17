@@ -5,3 +5,4 @@ set(CMAKE_C_STANDARD 17)
 
 add_subdirectory(practice)
 add_subdirectory(homework1)
+add_subdirectory(homework2)

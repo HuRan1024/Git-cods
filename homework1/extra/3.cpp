@@ -10,16 +10,16 @@ int main() {
     char a[1001], b[1001], c[1001] = {0};
     char s[2002][1001];
     int n = 0;
-    while (scanf ("%s",s[n]) != EOF){
-        n ++;        //读入不定行，二维数组s中每一行为一个数
+    while (scanf("%s", s[n]) != EOF) {
+        n++;        //读入不定行，二维数组s中每一行为一个数
     }
-    for (int p = 0; p <= n; p ++) {                   //将两行的s分别赋给a,b；然后进行加算
+    for (int p = 0; p <= n; p++) {                   //将两行的s分别赋给a,b；然后进行加算
         for (int i = 0; i < 1001; i++) {
             a[i] = s[p][i];
         }
         p++;
         for (int i = 0; i < 1001; i++) {
-            b[i] = s[p][i] ;
+            b[i] = s[p][i];
         }
         int n1 = strlen(a), n2 = strlen(b);
         //printf ("%d %d", n1, n2);

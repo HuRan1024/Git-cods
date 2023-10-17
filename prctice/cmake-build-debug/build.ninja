@@ -271,6 +271,39 @@ build ruishilun.exe: CXX_EXECUTABLE_LINKER__ruishilun_Debug CMakeFiles/ruishilun
   TARGET_IMPLIB = libruishilun.dll.a
   TARGET_PDB = ruishilun.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target help
+
+
+#############################################
+# Order-only phony target for help
+
+build cmake_object_order_depends_target_help: phony || CMakeFiles/help.dir
+
+build CMakeFiles/help.dir/help.cpp.obj: CXX_COMPILER__help_unscanned_Debug D$:/codes/clion/prctice/help.cpp || cmake_object_order_depends_target_help
+  DEP_FILE = CMakeFiles\help.dir\help.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\help.dir
+  OBJECT_FILE_DIR = CMakeFiles\help.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target help
+
+
+#############################################
+# Link the executable help.exe
+
+build help.exe: CXX_EXECUTABLE_LINKER__help_Debug CMakeFiles/help.dir/help.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\help.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = help.exe
+  TARGET_IMPLIB = libhelp.dll.a
+  TARGET_PDB = help.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -299,6 +332,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build calculator: phony calculator.exe
 
+build help: phony help.exe
+
 build prime_close: phony prime_close.exe
 
 build prime_number1: phony prime_number1.exe
@@ -319,7 +354,7 @@ build try: phony try.exe
 #############################################
 # Folder: D:/codes/clion/prctice/cmake-build-debug
 
-build all: phony calculator.exe prime_number1.exe prime_number2.exe sqrt.exe try.exe prime_close.exe ruishilun.exe
+build all: phony calculator.exe prime_number1.exe prime_number2.exe sqrt.exe try.exe prime_close.exe ruishilun.exe help.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.

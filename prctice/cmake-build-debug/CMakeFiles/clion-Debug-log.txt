@@ -18,6 +18,29 @@ CMake Warning (dev) in CMakeLists.txt:
   both commands.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Configuring done (0.0s)
+CMake Warning (dev) at CMakeLists.txt:9 (add_executable):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "help" is reserved or not valid for certain CMake features,
+  such as generator expressions, and may result in undefined behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
--- Build files have been written to: D:/codes/clion/prctice/cmake-build-debug
+CMake Error:
+  Running
+
+   'D:/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe' '-C' 'D:/codes/clion/prctice/cmake-build-debug' '-t' 'recompact'
+
+  failed with:
+
+   ninja: error: build.ninja:391: multiple rules generate help [-w dupbuild=err]
+
+  
+
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
