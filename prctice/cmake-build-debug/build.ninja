@@ -74,39 +74,6 @@ build calculator.exe: CXX_EXECUTABLE_LINKER__calculator_Debug CMakeFiles/calcula
   TARGET_PDB = calculator.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target prime_number1
-
-
-#############################################
-# Order-only phony target for prime_number1
-
-build cmake_object_order_depends_target_prime_number1: phony || CMakeFiles/prime_number1.dir
-
-build CMakeFiles/prime_number1.dir/prime_number1.cpp.obj: CXX_COMPILER__prime_number1_unscanned_Debug D$:/codes/clion/prctice/prime_number1.cpp || cmake_object_order_depends_target_prime_number1
-  DEP_FILE = CMakeFiles\prime_number1.dir\prime_number1.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\prime_number1.dir
-  OBJECT_FILE_DIR = CMakeFiles\prime_number1.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target prime_number1
-
-
-#############################################
-# Link the executable prime_number1.exe
-
-build prime_number1.exe: CXX_EXECUTABLE_LINKER__prime_number1_Debug CMakeFiles/prime_number1.dir/prime_number1.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\prime_number1.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = prime_number1.exe
-  TARGET_IMPLIB = libprime_number1.dll.a
-  TARGET_PDB = prime_number1.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target prime_number2
 
 
@@ -304,6 +271,72 @@ build help.exe: CXX_EXECUTABLE_LINKER__help_Debug CMakeFiles/help.dir/help.cpp.o
   TARGET_IMPLIB = libhelp.dll.a
   TARGET_PDB = help.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Hanoi
+
+
+#############################################
+# Order-only phony target for Hanoi
+
+build cmake_object_order_depends_target_Hanoi: phony || CMakeFiles/Hanoi.dir
+
+build CMakeFiles/Hanoi.dir/Hanoi.cpp.obj: CXX_COMPILER__Hanoi_unscanned_Debug D$:/codes/clion/prctice/Hanoi.cpp || cmake_object_order_depends_target_Hanoi
+  DEP_FILE = CMakeFiles\Hanoi.dir\Hanoi.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Hanoi.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hanoi.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Hanoi
+
+
+#############################################
+# Link the executable Hanoi.exe
+
+build Hanoi.exe: CXX_EXECUTABLE_LINKER__Hanoi_Debug CMakeFiles/Hanoi.dir/Hanoi.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Hanoi.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Hanoi.exe
+  TARGET_IMPLIB = libHanoi.dll.a
+  TARGET_PDB = Hanoi.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target prime_number1
+
+
+#############################################
+# Order-only phony target for prime_number1
+
+build cmake_object_order_depends_target_prime_number1: phony || CMakeFiles/prime_number1.dir
+
+build CMakeFiles/prime_number1.dir/prime_number1.cpp.obj: CXX_COMPILER__prime_number1_unscanned_Debug D$:/codes/clion/prctice/prime_number1.cpp || cmake_object_order_depends_target_prime_number1
+  DEP_FILE = CMakeFiles\prime_number1.dir\prime_number1.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\prime_number1.dir
+  OBJECT_FILE_DIR = CMakeFiles\prime_number1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target prime_number1
+
+
+#############################################
+# Link the executable prime_number1.exe
+
+build prime_number1.exe: CXX_EXECUTABLE_LINKER__prime_number1_Debug CMakeFiles/prime_number1.dir/prime_number1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\prime_number1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = prime_number1.exe
+  TARGET_IMPLIB = libprime_number1.dll.a
+  TARGET_PDB = prime_number1.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -330,6 +363,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Hanoi: phony Hanoi.exe
+
 build calculator: phony calculator.exe
 
 build help: phony help.exe
@@ -354,7 +389,7 @@ build try: phony try.exe
 #############################################
 # Folder: D:/codes/clion/prctice/cmake-build-debug
 
-build all: phony calculator.exe prime_number1.exe prime_number2.exe sqrt.exe try.exe prime_close.exe ruishilun.exe help.exe
+build all: phony calculator.exe prime_number2.exe sqrt.exe try.exe prime_close.exe ruishilun.exe help.exe Hanoi.exe prime_number1.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.

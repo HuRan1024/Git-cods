@@ -1,10 +1,10 @@
 # ninja log v5
 1	53	7183823667721823	CMakeFiles/week.dir/week.cpp.obj	8f68fc56a152cbf2
-53	130	7183823668463344	week.exe	23a5ce508964fa28
 1	79	7183860942042085	CMakeFiles/prime_close.dir/prime_close.cpp.obj	c42a361ff59fb652
+53	130	7183823668463344	week.exe	23a5ce508964fa28
 79	182	7183860943046845	prime_close.exe	ddf1760ce2c9daa
-1	68	7189005348554008	CMakeFiles/ruishilun.dir/ruishilun.cpp.obj	2573927eb4b9fc92
 1	59	7190563771470912	CMakeFiles/try.dir/try.cpp.obj	a96aba3070ffe91e
+1	68	7189005348554008	CMakeFiles/ruishilun.dir/ruishilun.cpp.obj	2573927eb4b9fc92
 68	155	7189005349392213	ruishilun.exe	54af92a42d464394
 59	137	7190563772212030	try.exe	e8d471369481c897
 1	67	7185672418965960	CMakeFiles/prime_number1.dir/prime_number1.cpp.obj	9bdf40f19e837ef4

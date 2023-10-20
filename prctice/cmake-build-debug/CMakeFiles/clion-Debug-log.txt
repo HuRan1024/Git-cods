@@ -18,7 +18,7 @@ CMake Warning (dev) in CMakeLists.txt:
   both commands.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at CMakeLists.txt:9 (add_executable):
+CMake Warning (dev) at CMakeLists.txt:7 (add_executable):
   Policy CMP0037 is not set: Target names should not be reserved and should
   match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
   details.  Use the cmake_policy command to set the policy and suppress this
@@ -28,7 +28,7 @@ CMake Warning (dev) at CMakeLists.txt:9 (add_executable):
   such as generator expressions, and may result in undefined behavior.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Configuring done (0.2s)
+-- Configuring done (0.1s)
 -- Generating done (0.0s)
 CMake Error:
   Running
@@ -37,7 +37,7 @@ CMake Error:
 
   failed with:
 
-   ninja: error: build.ninja:391: multiple rules generate help [-w dupbuild=err]
+   ninja: error: build.ninja:426: multiple rules generate help [-w dupbuild=err]
 
   
 
