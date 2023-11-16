@@ -54,6 +54,7 @@
 //    return 0;
 //
 //}
+/*
 #include<stdio.h>
 #include<math.h>
 int main ()
@@ -75,4 +76,73 @@ int main ()
         }
     }
     return 0;
-}
+}*/
+/*#include<stdio.h>
+#include <math.h>
+int main()
+{
+    double t,x,sum;
+    int i = 2;
+    scanf("%lf",&x);
+    t = x;
+    sum = x;
+    while (fabs(t) >= 1e-8) {
+        t = -t * x * x / i / (i + 1);
+        sum += t;
+        i += 2;
+    }
+    printf("%f",sum);
+    return 0;
+}*/
+/*
+#include<stdio.h>
+int main ()
+{
+    int i = 0;
+    int x1 = 2, x2 = 3;
+    printf("%d %d ",x1,x2);
+    for (i = 3; i < 21; i += 2) {
+        x1 = x1 + x2;
+        x2 = x2 - x1;
+        printf("%d %d ",x1,x2);
+    }
+    return 0;
+}*/
+/*
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double x = 1, eps = 1e-7, x1, f1, f;
+    do
+    {
+        x1 = x;
+        f = cos(x1) - x1;
+        f1 = -sin(x1) - x1;
+        x = x1 - f / f1;
+        f = cos(x) - x;
+    } while (fabs(f) >= eps && fabs(x - x1) >= eps);
+    printf("x=%.6f\nf(x)=%.6f\n", x,fabs(f));
+
+    return 0;
+}*/
+/*
+#include<stdio.h>
+#include <math.h>
+int main ()
+{
+    double a = -1, b = 1,eps = 1e-7,f,c;
+    do {
+        c = (a + b) / 2;
+        f = exp(c) + c;
+        if (fabs(f) < eps) {
+            break;
+        } else if (f > 0) {
+            b = c;
+        } else {
+            a = c;
+        }
+    } while (fabs(a - b) >= eps);
+    printf("x=%.6f",c);
+    return 0;
+}*/

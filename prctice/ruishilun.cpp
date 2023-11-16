@@ -65,59 +65,67 @@
 //
 // Created by reprise on 2023/10/7.
 //
-#include<stdio.h>
 
-void rank(int a[], int s[], int N)//排列函数，a[i]的值是名次为i的选手的序号-1
+#include <stdio.h>
+
+typedef struct competiters {
+    int number;
+    int score;
+    int w;
+} competiter;
+
+void rank(competiter a[], int n) // 对选手，按分数从小到大排序
 {
-    int i = 0, j = 0;
-    int b[2 * N];
-    for (i = 0; i < 2 * N; i++) {
-        b[i] = s[i];
-        //printf("%d ",b[i]);
-    }
-    for (j = 0; j < 2 * N; j++) {
-        for (i = 0; i < 2 * N; i++) {
-            //printf("%d %d",a[j],b[a[j]]);
-            if (b[i] > b[a[j]]) {
-                a[j] = i;
+    int i, j, k;
+    competiter t;
+
+    for (i = 0; i < 2 * n; i++) {
+        int max = a[i].score;
+        k = i;
+        for (j = i + 1; j < 2 * n; j++) {
+            if (a[j].score >= max) {
+                max = a[j].score;
+                k = j;
             }
         }
-        b[a[j]] = 0;
+        if (max == a[i].score) {
+            if (a[k].number < a[i].number) {
+                t = a[i];
+                a[i] = a[k];
+                a[k] = t;
+            }
+        } else {
+            t = a[i];
+            a[i] = a[k];
+            a[k] = t;
+        }
     }
 }
 
 int main() {
-    int N, R, Q;
-    scanf("%d%d%d", &N, &R, &Q);
-    int a[2 * N], s[2 * N], w[2 * N], i, j;
-    for (i = 0; i < 2 * N; i++) {
-        scanf("%d", &s[i]);
+    int n, r, q, i, j;
+    scanf("%d%d%d", &n, &r, &q);
+    competiter a[200000];
+    for (i = 0; i < 2 * n; i++) {
+        a[i].number = i + 1;
     }
-    for (i = 0; i < 2 * N; i++) {
-        scanf("%d", &w[i]);
+    for (i = 0; i < 2 * n; i++) {
+        scanf("%d", &a[i].score);
     }
-    for (i = 0; i < 2 * N; i++) {
-        a[i] = i;
+    for (i = 0; i < 2 * n; i++) {
+        scanf("%d", &a[i].w);
     }
-    rank(a, s, N);
-    for (j = 0; j < R; j++) {
-        for (i = 0; i < N; i++) {
-            if (w[a[2 * i]] > w[a[2 * i + 1]]) {
-                s[a[2 * i]]++;
-            } else
-                s[a[2 * i + 1]]++;
+    rank(a, n);
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < 2 * n; j += 2) {
+            if (a[j].w > a[j + 1].w) {
+                a[j].score++;
+            } else {
+                a[j + 1].score++;
+            }
         }
-        rank(a, s, N);
-        /*for(i=0;i<2*N;i++)
-        {
-            printf("%d %d  ",a[i],s[i]);
-        }
-        printf("\n");*/
+        rank(a, n);
     }
-    printf("%d", a[Q - 1] + 1);
-/*for(i=0;i<2*N;i++)
-{
-    printf("%d %d  ",a[i],s[i]);
-}*/
+    printf("%d", a[q - 1].number);
     return 0;
 }

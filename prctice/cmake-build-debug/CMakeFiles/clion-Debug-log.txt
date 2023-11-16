@@ -28,7 +28,7 @@ CMake Warning (dev) at CMakeLists.txt:7 (add_executable):
   such as generator expressions, and may result in undefined behavior.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Configuring done (0.1s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 CMake Error:
   Running
